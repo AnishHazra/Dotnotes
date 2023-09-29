@@ -6,7 +6,7 @@
     scroll-behavior: smooth;
 }
 body{
-  background-color: #000;  
+  background-color: #000415;  
 }
 .logo{
     cursor: pointer;
@@ -63,6 +63,11 @@ h1{
 .sub-title{
     padding: 20px 0;
     color: #fff;
+    font-style: italic;
+    border-bottom: 4px solid#c9c9c9 ;
+    padding-bottom: 7px;
+    margin-bottom: 20px;
+    
 }
 
 /* -------------------1st semester---------------------------- */
@@ -95,6 +100,46 @@ h1{
 .sem img:hover{
     box-shadow: 0 10px 15px rgba(0,0,0,.3);
     transform: scale(1.03);
+}
+
+.sem2 a{
+    position:relative;
+    display: inline-block;
+    padding: 25px 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: rgb(6, 255, 247);
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: 0.5s;
+    overflow: hidden;
+    margin-right: 70px;
+    text-decoration: none;
+
+}
+.sem2 a:hover{
+    background-color:rgb(124, 124, 124);
+    color: #050801;
+    box-shadow: 0 0 5px rgb(12, 255, 255),
+                0 0 25px rgb(12, 255, 255),
+                0 0 50px rgb(12, 255, 255),
+                0 0 200px rgb(12, 255, 255) ;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+    
+}
+.sem2{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 30px;
+    margin-bottom: 30px;
+}
+.sem2 div span{
+    position: static;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    text-decoration: none;
 }
 /* ----------about-msg------------------- */
 .about-msg{
